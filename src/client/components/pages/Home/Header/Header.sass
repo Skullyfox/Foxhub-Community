@@ -1,0 +1,29 @@
+.header
+    position: relative
+    padding: $spacing-lg
+    background: linear-gradient(150DEG, $color-primary, $color-secondary)
+    color: $color-white
+
+.title
+    font-size: $text-xxxl
+    margin-bottom: 0
+
+.sub-title
+    font-size: $text-md
+    margin-bottom: $spacing-md
+
+.title, .sub-title
+    color: inherit
+    font-family: $font-title
+
+.cta
+    background-color: transparent
+    font-size: $text-md
+    padding: $spacing-xs
+    border-radius: $spacing-xxs
+    color: $color-white
+    border: solid 1px $color-white
+    cursor: pointer
+    box-shadow: 0 3px 6px transparentize($color-black, 0.75)
+    &:hover
+        background-color: $color-primary-light
