@@ -1,8 +1,16 @@
+@import "./assembly.sass"
+
 .header
     position: relative
-    padding: $spacing-lg
     background: linear-gradient(150DEG, $color-primary, $color-secondary)
     color: $color-white
+
+.grid
+    display: grid
+    grid-template-columns: 5fr 5fr
+
+.text
+    padding: $spacing-xxl 0
 
 .title
     font-size: $text-xxxl
@@ -27,3 +35,9 @@
     box-shadow: 0 3px 6px transparentize($color-black, 0.75)
     &:hover
         background-color: $color-primary-light
+
+.assembly
+    perspective: 50em
+    perspective-origin: left top
+    transform-style: preserve-3d
+    position: relative

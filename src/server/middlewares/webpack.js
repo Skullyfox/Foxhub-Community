@@ -26,7 +26,7 @@ module.exports = () =>
                 })
             );
             app.use(webpackHotMiddleware(compiler));
-            app.listen(parseInt(process.env.PORT, 10) + 1);
+            app.listen(parseInt(process.env.PORT, 10) + 1 || 8001);
         } else {
             resolve();
         }

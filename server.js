@@ -19,6 +19,6 @@ webpack()
         const http = require('./src/server/app.js');
         logger.info(`=============================================
       Building App...DONE`);
-        http.listen(process.env.PORT, handleListen(logger.info));
+        http.listen(process.env.PORT || 8000, handleListen(logger.info));
     })
     .catch(err => logger.error(err.stack));
