@@ -10,12 +10,10 @@ let w = wretch(constants.API_URL + '/api')
     .resolve(resolver =>
         resolver
             .notFound(async (error, req) => {
-                console.log(error);
                 // TODO
                 return { error: 404 };
             })
             .unauthorized(async (error, req) => {
-                console.log(error);
                 // TODO
                 return { error: 401 };
             })

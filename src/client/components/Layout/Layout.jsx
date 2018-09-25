@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Routes from './../Routes/Routes.jsx';
-import Navbar from './Navbar/Navbar.jsx';
+import NavigationBar from './NavigationBar/NavigationBar.jsx';
 
 class Layout extends Component {
     render() {
         return (
-            <>
-                <Navbar />
-                <div style={{paddingTop: '67px'}}>
-                    <Routes />
-                </div>
-            </>
+            <React.Fragment>
+                <NavigationBar />
+                <Routes />
+            </React.Fragment>
         );
     }
 }
 
 export default Layout;
+ 

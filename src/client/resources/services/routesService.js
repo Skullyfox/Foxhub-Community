@@ -1,6 +1,7 @@
 
 import Home, { fetchData as HomeFetch } from './../../components/pages/Home/Home.jsx';
-import Docs, { fetchData as DocsFetch } from './../../components/pages/Docs/Docs.jsx';
+import Sign, { fetchData as SignFetch } from './../../components/pages/Sign/Sign.jsx';
+
 const routes = [    ,{
     path: '/',
     exact: true,
@@ -8,9 +9,10 @@ const routes = [    ,{
     fetchFn: HomeFetch,
     authLevel: 'public'
 },    {
-    path: '/docs',
-    component: Docs,
-    fetchFn: DocsFetch,
+    path: '/sign',
+    exact: true,
+    component: Sign,
+    fetchFn: SignFetch,
     authLevel: 'public'
 },];
 

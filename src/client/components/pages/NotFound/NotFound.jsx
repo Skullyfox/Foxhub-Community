@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from './../../InfinityLogo/InfinityLogo.jsx';
+import Logo from './InfinityLogo/InfinityLogo.jsx';
 import './NotFound.sass';
 
 const NotFound = () => (
